@@ -16,6 +16,14 @@ keyboardInput.addEventListener('keydown', (event) => {
 });
 
 
+// Form events: Prevent default submit behavior
+const form = document.getElementById('myForm');
+const formMessage = document.getElementById('formMessage');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    formMessage.textContent = "Form submitted successfully!";
+});
 
 
 
