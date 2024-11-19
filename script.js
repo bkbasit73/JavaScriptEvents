@@ -7,6 +7,13 @@ mouseButton.addEventListener('mouseover', () => {
 mouseButton.addEventListener('mouseout', () => {
     mouseMessage.textContent = "Hover effect ended!";
 });
+// Keyboard events: Track last key pressed
+const keyboardInput = document.getElementById('keyboardInput');
+const keyboardMessage = document.getElementById('keyboardMessage');
+
+keyboardInput.addEventListener('keydown', (event) => {
+    keyboardMessage.textContent = `Last key pressed: ${event.key}`;
+});
 
 
 
